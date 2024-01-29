@@ -10,7 +10,13 @@ async function checkWeather() {
 
     if(response.status == 404) {
         document.querySelector(".error").style.display = "block";
-        document.querySelector(".weather").style.display = "none";
+        // document.querySelector(".weather").style.display = "none";
+            
+        document.querySelector(".city").innerHTML = "-- --";
+        document.querySelector(".temp").innerHTML =  "-- --";
+        document.querySelector(".humidity").innerHTML =  "-- --";
+        document.querySelector(".wind").innerHTML =  "-- --";
+        
     }
 
     else {
